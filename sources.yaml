@@ -1,6 +1,6 @@
 LineageOS-20:
   kernel:
-    - git clone https://github.com/HowWof/android_kernel_samsung_a226b.git -b lineage-20
+    - git clone https://github.com/C1assic/android_kernel_samsung_a226b -b master
   clang:
     - git clone --depth=1 https://gitlab.com/Jprimero15/lolz_clang.git -b main
   config:
