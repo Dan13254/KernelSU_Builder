@@ -1,6 +1,6 @@
-A22-5G:
+LineageOS-20:
   kernel:
-    - git clone https://github.com/Dan13254/android_kernel_samsung_a226b.git -b master
+    - git clone https://github.com/HowWof/android_kernel_samsung_a226b.git -b lineage-20
   clang:
     - git clone --depth=1 https://gitlab.com/Jprimero15/lolz_clang.git -b main
   config:
@@ -10,19 +10,6 @@ A22-5G:
   target:
     - out/arch/arm64/boot/Image.gz-dtb
   anykernel:
-    - a22
+    - nashc
   kernelSU:
     - stable-pin
-
-Clean:
-  out:
-    - rm -rf out
-  kernel:
-    - make mrproper
-  custom:
-    - git status
-
-KernelSU:
-  version:
-    stable-pin:
-      - curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s kernelsu-version
